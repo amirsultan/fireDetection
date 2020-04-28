@@ -17,7 +17,6 @@ Iteration 1:  Simple image recognition model and tried to train with simple CNN 
 
 Iteration 2: Alexnet model for classification
 
-Iteration 2: Alexnet model for classification
 
 Iteration 3: Mask RCNN model
 
