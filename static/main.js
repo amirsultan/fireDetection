@@ -131,6 +131,7 @@ function displayImage(image, id) {
 function displayResult(data) {
   // display the result
   // imageDisplay.classList.remove("loading");
+  imageDisplay.src = 'data:image/png;base64,' + data.image;
   hide(loader);
   predResult.innerHTML = data.result;
   show(predResult);

@@ -1,5 +1,7 @@
 import os
 import sys
+from datetime import datetime
+import base64
 
 # Flask
 from flask import Flask, redirect, url_for, request, render_template, Response, jsonify, redirect
@@ -71,9 +73,6 @@ def predict():
         # Get the image from post request
         img = base64_to_pil(request.json)
 
-        # Save the image to ./uploads
-        # img.save("./uploads/image.png")
-
         # Make prediction
         ##preds = model_predict(img, model)
         pred_proba = model_predict(img, model)
@@ -103,12 +102,24 @@ def predict():
         ##result = result.replace('_', ' ').capitalize()
         
         # Serialize the result, you can add additional fields
-        return jsonify(result=result, probability=pred_proba)
+
+
+        this_image = f"./images/{datetime.now().timestamp()}.png"
+        
+        ################# ACTION: SAVE YOUR MASKED IMAGE HERE ##################
+        #Watever function you have change the `img.save`
+        img.save(this_image)
+        ################# ACTION END ##################
+        
+        image_file = open(this_image, "rb")
+        image = base64.b64encode(image_file.read())
+        image_string = str(image)[2:-1] #converting it into string and removing the 'b' and the quotes from the start and end
+
+        return jsonify(result=result, probability=pred_proba, image=image_string)
 
     return None
 
 def sendEmail():
-    import yagmail
 
     yag = yagmail.SMTP('aifiredetectionsystem@gmail.com', 'fire@1234')
 
