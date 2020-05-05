@@ -34,7 +34,7 @@ d. Result and comparison with Unet Masks:
 ![alt text](https://i.ibb.co/093jX9V/Screen-Shot-2020-05-05-at-12-42-55-AM.png)
 
 
-Step 5:
+Step 5: Demonstation using Flask and HTML / Javascript UI:
 ![alt text](https://i.ibb.co/VDXNhgN/Screen-Shot-2020-04-28-at-4-13-10-AM.png)
 ![alt text](https://i.ibb.co/n0vRYGZ/Screen-Shot-2020-04-28-at-4-13-20-AM.png)
 
