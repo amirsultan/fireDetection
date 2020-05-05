@@ -41,10 +41,3 @@ Step 5: Demonstation using Flask and HTML / Javascript UI:
 Step 6:
 Generating Alerts: Generating alerts through emails
 ![alt text](https://i.ibb.co/f8C2Fts/Screen-Shot-2020-04-28-at-4-13-33-AM.png)
-
-https://ibb.co/hgqkZC8
-https://ibb.co/GRgxttK
-https://ibb.co/k8Mx51H
-https://ibb.co/R6WpS64
-
-Result of the model has been deployed in the basic front end, where you can upload images and it will tell you if there is fire or not.
