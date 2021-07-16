@@ -121,11 +121,11 @@ def predict():
 
 def sendEmail():
 
-    yag = yagmail.SMTP('aifiredetectionsystem@gmail.com', 'fire@1234')
+    yag = yagmail.SMTP('aifiredetectionsystem@gmail.com', 'password')
 
     # Alternatively, with a simple one-liner:
 
-    yagmail.SMTP('aifiredetectionsystem').send('amir.aimt@gmail.com', 'Fire Detected', 'Fire Detected')
+    yagmail.SMTP('aifiredetectionsystem').send('am****@gmail.com', 'Fire Detected', 'Fire Detected')
 
     
 if __name__ == '__main__':
